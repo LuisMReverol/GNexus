@@ -1,0 +1,115 @@
+.game {
+  background-color: $color-grey-light-1;
+
+
+  ////////////Figure
+  &__fig {
+    position: relative;
+    height: 32rem;
+
+    transform-origin: top;
+
+    &::before {
+      content: "";
+
+      display: block;
+      position: absolute;
+
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-dark,
+        $color-secondary
+      );
+      opacity: 0.6;
+    }
+  }
+
+  &__des-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2.25rem 0rem 2.25rem;
+    align-items: center;
+
+    font-size: 1.50rem;
+  }
+
+  &__img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%) skewX(-16deg);
+
+    width: 50%;
+    line-height: 1.95;
+
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #fff;
+
+    span {
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      padding: 1.3rem 2rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-dark,
+        $color-secondary
+      );
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+
+    padding: 7.5rem 8rem 3.5rem 8rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.65rem;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 4.5rem;
+    }
+  }
+
+  &__info-icon {
+    height: 2.35rem;
+    width: 2.35rem;
+    margin-right: 1.15rem;
+
+    fill:$color-primary
+  }
+
+  &__info-data {
+    margin-right: 0.5rem;
+
+    font-weight: 700;
+  }
+}

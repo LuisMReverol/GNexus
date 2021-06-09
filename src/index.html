@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>GNexus // The center of video games information</title>
+
+    <!-- Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700"
+      rel="stylesheet"
+    />
+  </head>
+</html>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="./assets/logo.png" alt="Logo" class="header__logo" />
+      <form class="search">
+        <input
+          type="text"
+          class="search__field"
+          placeholder="Look for any game..."
+        />
+        <button class="btn search__btn">
+          <svg class="search__icon">
+            <use href="./assets/icons/icons.svg#icon-search"></use>
+          </svg>
+          <span>Search</span>
+        </button>
+      </form>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <button class="nav__btn nav__btn--bookmarks">
+              <svg class="nav_icon">
+                <use href="./assets/icons/icons.svg#icon-checkmark"></use>
+              </svg>
+              <span>Add Game</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="search-results">
+      <ul class="results">
+        <!-- <li class="preview">
+          <a class="preview__link" href="#23456">
+            <figure class="preview__fig">
+              <img src="./assets/test-1.png" alt="Test" />
+            </figure>
+            <div class="preview__data">
+              <h4 class="preview__title">Castlevania Dracula X ...</h4>
+              <p class="preview__publisher">Konami</p>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+
+      <div class="pagination">
+        <button class="btn--inline pagination__btn--prev">
+          <svg class="search__icon">
+            <use href="./assets/icons/icons.svg#icon-arrow-left"></use>
+          </svg>
+          <span> Page 1 </span>
+        </button>
+        <button class="btn--inline pagination__btn--next">
+          <span> Page 3</span>
+          <svg class="search__icon">
+            <use href="./assets/icons/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="copyright">
+        &copy; Copyright by
+        <a class="twitter-link" target="_blank" href="">Luis Mendez</a>
+      </p>
+    </div>
+
+    <div class="game">
+      <div class="message">
+        <div>
+          <svg></svg>
+        </div>
+        <p>Start by searching for a game or publisher</p>
+      </div>
+
+      <!-- <div class="spinner">
+        <svg>
+          <use href="../src/assets/icons/icons.svg#icon-spinner9"></use>
+        </svg>
+      </div> -->
+
+      <!-- <div class="error">
+        <div>
+          <svg>
+            <use href="../src/assets/icons/icons.svg#icon-stats-dots"></use>
+          </svg>
+        </div>
+        <p>No recipes found for your query. Please try again!</p>
+      </div> -->
+
+      <!-- <figure class="game__fig">
+        <img src="./assets/test-1.png" alt="Castlevania" class="game__img" />
+        <h1 class="game__title">
+          <span>Castlevania</span>
+        </h1>
+      </figure>
+      <div class= "game__description">
+        
+      </div>
+      <div class="game__details">
+        <div class="game__info">
+          <svg class="game__info-icon">\
+            <use href="./assets/icons/icons.svg#icon-profile"></use>
+          </svg>
+          <span class="game__info-data game__info-data--year">1995</span>
+        </div>
+        <div class="game__info">
+          <svg class="game__info-icon">
+            <use href="./assets/icons/icons.svg#icon-stats-dots"></use>
+            <span class="game__info-data game__info-data--publisher"> KONAMI </span>
+          </svg>
+        </div>
+        <div class="game__info">
+          <svg class="game__info-icon">
+            <use href="./assets/icons/icons.svg#icon-spinner9"></use>
+            <span class="game__info-data game__info-data--console"> Super Nintendo </span>
+          </svg>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
